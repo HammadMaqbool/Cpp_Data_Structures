@@ -1,0 +1,28 @@
+#include<iostream.h>
+#include<conio.h>
+class Temp{
+private:
+char  a[100];
+public:
+insert(){
+int i = 0;
+cout<<"Enter a String ";
+cin>>a;
+char c;
+cout<<"enter any character ";
+cin>>c;
+while(i<=100)
+{
+if (a[i]==c)
+{
+cout<<"character found at index="<<i+1<<endl;
+}
+i++;
+}
+}
+};
+void main()
+{
+Temp obj;
+obj.insert();
+}

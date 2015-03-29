@@ -1,0 +1,26 @@
+#include<iostream.h>
+#include<conio.h>
+class Temp{
+public:
+SubString()
+{
+char a[100];
+cout<<"Enter a String ";
+cin>>a;
+int initial;
+cout<<"Enter initial position ";
+cin>>initial;
+int finalp;
+cout<<"Final position of substring ";
+cin>>finalp;
+for(int i=initial;i<=finalp;i++)
+{
+cout<<a[i];
+}
+}
+};
+void main()
+{
+Temp obj;
+obj.SubString();
+}

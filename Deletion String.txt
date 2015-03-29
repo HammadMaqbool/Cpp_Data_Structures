@@ -1,0 +1,27 @@
+class Temp{
+public:
+Delete()
+{
+char a[100],st1[100];
+int r=0,i=0;
+cout<<"Enter a String"<<endl;
+cin>>a;
+int loc;
+cout<<"Enter initial position";
+cin>>loc;
+int finalp;
+cout<<"Final position";
+cin>>finalp;
+for( i=0;i<=loc-1;i++,r++)
+st1[r]=a[i];
+for(i=loc+finalp;a[i]!='\0';i++,r++)
+st1[r]=a[i];
+st1[r]='\0';
+cout<<st1;
+}
+};
+void main()
+{
+Temp obj;
+obj.Delete();
+}

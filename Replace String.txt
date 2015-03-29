@@ -1,0 +1,28 @@
+#include<iostream.h>
+#include<conio.h>
+class Temp{
+public:
+Replace()
+{
+char a[100];
+
+cin>>a;
+int b;
+cout<<"enter phli position";
+cin>>b;
+int c;
+cout<<"enter 2sri position";
+cin>>c;
+for(int j=b; j<=c;j++)
+{
+cin>>a[j];
+
+}
+cout<<a;
+}
+};
+void main()
+{
+ Temp obj;
+ obj.Replace();
+}

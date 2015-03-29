@@ -1,0 +1,29 @@
+#include<iostream.h>
+#include<conio.h>
+class aho{
+public:
+insert(char str1[],char str2[],char str3[])
+{
+int r =0,i=0;
+char res[100];
+for( i=0;str1[i]!='\0';i++, r++)
+res[r]=str1[i];
+for( i=0;str2[i]!='\0';i++, r++)
+res[r]=str2[i];
+for( i=0;str3[i]!='\0';i++, r++)
+res[r]=str3[i];
+res[r]='\0';
+cout<<res;
+}
+};
+void main()
+{
+aho obj;
+char a[100],b[100],c[100];
+cout<<"enter strings";
+cin>>a;
+cin>>b;
+cin>>c;
+obj.insert(a, b, c);
+
+}

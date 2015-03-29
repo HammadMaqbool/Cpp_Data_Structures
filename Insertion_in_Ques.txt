@@ -1,0 +1,63 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	int f,r,n;
+	int Q[10];
+	f=r=-1;
+	again:
+cout<<"Enter Your choice\t 1:For Insertion\t 2:For Deletion";
+int choice;
+cin>>choice;
+switch(choice)
+{
+	case 1:
+	while(r!=9){
+	cout<<"Enter the Number";
+	cin>>n;
+	if(r>=9)
+	{
+		cout<<"Queu is Full";
+	}
+	else
+	{
+		r++;
+		Q[r]=n;
+		if(f==-1)
+		{
+			f=0;
+		}
+	}
+	}//while ending here....
+	cout<<"Queue is Full\nPress M to Goto Main Menu!";
+	char input;
+	cin>>input;
+	if(input=='M')
+	{
+		goto again;
+	}
+
+	break;
+
+	case 2:
+	int data;
+	while(f!=-1)
+	{
+	if(f==-1)
+	{
+		cout<<"Que is empty";
+	}
+	data = Q[f];
+	if(f==r)
+	{
+		f=r=-1;
+	}
+	else
+	 {
+	f++;
+	}
+	cout<<"Data "<<data<<" is Deleted\n";
+	getch();
+	 }
+	}// switch closing here.. . . .
+}// void main closing here.. . .

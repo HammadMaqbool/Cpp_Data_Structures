@@ -1,0 +1,12 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{  int i =2;
+	char choice='a';
+	while(choice!='x')
+	{
+		cout<<i<<"\n";
+		i+=2;
+		choice =getch();
+	}
+}
